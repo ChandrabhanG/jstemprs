@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandrabhan Gupta</title>
+    <link rel="stylesheet" href="../Css/Style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/06eb501cc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="hrader">
+        <div class="container">
+            <nav>
+                <!-- <i class="fa-solid fa-bars"></i> -->
+                <div class="logo"><h1 class="animate__animated animate__bounce heartBeat"> Welcome </h1> </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h3> Hi There, <br>  I'm <span>Chandrabhan Gupta</span>  <br> I'm a Developer..!!</h3>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../Image/cbg.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><h2>I'm passionate about my work and I know how to get the job done.Because I love what I do, I have a steady source of motivation that drives me to do my best.</h2></p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul> 
+                            <li><span>UI/UX</span><br>Designing Web/Software Interface</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Software Development</span><br>Software Designing</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul> 
+                            <li><span>2020-23</span><br>Designing Web/Software Interface</li>
+                            <li><span>2020-21</span><br>Web app Development</li>
+                            <li><span>2021-22</span><br>Software Designing</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul> 
+                            <li><span>2019-23</span><br>B.Tech from BNCET</li>
+                            <li><span>2022</span><br>Java Training from InfoTech.</li>
+                            <li><span>2018</span><br>12th from SPIC</li>
+                            <li><span>2016</span><br>10th from SPIC</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------Services---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design </h2>
+                <p> say something about</p>
+                <a href="#">Learn More </a>
+            </div>
+
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>Software Design </h2>
+                <p> say something about</p>
+                <a href="#">Learn More </a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-apple"></i>
+                <h2>UI/UX</h2>
+                <p> say something about</p>
+                <a href="#">Learn More </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ------------Photos------------- -->
+<div id="photos">
+    <div class="container">
+        <h1 class="sub-title">Photos</h1>
+        <div class="photos-list">
+            <div>
+                <img src="../Image/cbg1.jpg">
+                <img src="../Image/cbg2.jpg">
+                <img src="../Image/cbg3.jpg">
+                <img src="../Image/cbg4.jpg">
+                <img src="../Image/cbg5.jpg">
+                <img src="../Image/cbg6.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------Contact------------- -->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact</h1>
+        <div class="contact-list">
+            <div>
+                <h2>Phone no</h2>
+                <h2>Email</h2>
+                <h2><Address>XYZ</Address></h2>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------Portfolio-------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
+
